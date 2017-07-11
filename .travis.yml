@@ -10,11 +10,10 @@ before_script:
 - echo "prescript?"
 script:
 - "/bin/bash script.sh param"
-- git -v
 - echo banan > banan
 - git add banan
 - git commit -m "banan?"
-- git push https://$MY_TOKEN@github.com/jhrv/travistest
+- git push https://$MY_TOKEN@github.com/jhrv/travistest HEAD:master
 env:
   global:
     secure: COz/3SWpoi1URSfm5uv3CqGL9ge7QmTxmZL9CS/zlsjV+CH93Zpa5leKpDsTmNfujWkdgXmciXTM2ZwZA/OMbMQBfba2aYTGTtssca9COpLJ49qH1qAvpj+yZ06IPg03wB/VX9QgOFs7whhsjVBbkA/25T+/SRX8+m/laxXbNP6iUmLpB//OZ2GXBba85Zp1ciaILc9//G1c2Bfa2tC87RYyheDQ3/yphrVo+NB4oalf3Epl+HjvD6hfe+4hLqhRJNKYZsH6YJQ1Iev/74YNdHhcja8WObOiU/J6fXXbPjSoaUwBk1ADBmUasl25N01/ing4Pc69m3zsOzMU4nISGh3MLxbZRh7UjiZTetClFUgGAZMERLdza/JbAfpriBda3oXMC83pjXwo2rh/+DOVKbKS76i0hhN3R5U4J4ExTz/ZriwyWEPAeZYmk9B0y/1s/v4Q36AIBSltVJPk+SSkAaGnqOB5MoMAyzrMSkv2HXvjQUMlstoJKWnjERdFR1h2WMjmEYN3Q6c0FWDFOSzsQYEu2sJYbAgk8/K1uYwQTGfMC9cWgImC34J4Z5A5NrdCgVV8a5+6PXCUODxfyL0g8ATBlmDDGBFyfC8WQCzQNlIZq7B6grlvZumaL4J15IMgTzB6jDeismvWQ0pISTFxszs4pWYkYJOpfiMl/sEiS2g=
