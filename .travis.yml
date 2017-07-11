@@ -7,7 +7,7 @@ before_install:
 install:
 - echo "installing"
 before_script:
-- prescript?
+- echo "prescript?"
 script:
 - "/bin/bash script.sh param"
 - git -v
