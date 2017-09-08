@@ -1,4 +1,5 @@
 sudo: required
+language: node_js
 services:
 - docker
 before_install:
@@ -9,10 +10,9 @@ install:
 before_script:
 - echo "prescript?"
 script:
-- mkdir test
-- pwd
-- cd test
-- pwd 
+- echo "69" > version
+- export VERSION=$(cat version)
+- echo "version is $VERSION <- version"
 - env
 branches:
   only:
