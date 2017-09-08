@@ -14,6 +14,9 @@ script:
 - export VERSION=$(cat version)
 - echo "version is $VERSION <- version"
 - env
+- echo "$DB"
 branches:
   only:
   - master
+env:
+  - DB=postgres
